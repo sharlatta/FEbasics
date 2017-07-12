@@ -2,39 +2,41 @@
 
 <head>
     <title>My Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <style>
+        html,
+        body {
+            margin: 0;
+        }
+
         body {
             color: grey;
         }
 
-        li {
-            list-style: none;
-            width: 100px;
-            color: teal;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
         h1 {
             color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
         }
+
 
         article {
             padding: 15px;
-            margin: 10px;
+            border-bottom: 5px silver dotted;
+        }
+
+        article h1 {
+            font-size: 40px;
         }
 
         .article-html {
             background-color: rgba(154, 205, 50, 0.2);
-            border-width: 5px;
-            border-style: dotted;
             border-color: rgb(154, 205, 50);
         }
 
         .article-css {
             background-color: rgba(178, 34, 34, 0.2);
-            border-width: 10px;
-            border-style: solid;
             border-color: rgb(178, 34, 34);
         }
 
@@ -48,16 +50,35 @@
 
         table.navigation {
             width: 100%;
+            margin: 30px 0;
         }
 
         .navigation a {
             text-decoration: none;
             color: teal;
             cursor: pointer;
-            border-right-width: 2px;
-            border-color: teal;
-            border-style: solid;
             padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .banner {
+            background-image: url(images/bg.jpg);
+            height: 400px;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navigation a,
+        .banner h2,
+        article h1 {
+            font-family: 'Gloria Hallelujah', cursive;
+        }
+
+        .banner h2 {
+            color: white;
+            padding: 50px;
         }
     </style>
 </head>
@@ -69,11 +90,11 @@
 
                 <tr>
                     <td width="60%"></td>
-                    <td> <a href="#">HTML</a></td>
+                    <td> <a href="#html">HTML</a></td>
 
-                    <td> <a href="#">CSS</a href="#"></td>
+                    <td> <a href="#css">CSS</a href="#"></td>
                
-                    <td><a href="#">JavaScript</a href="#"></td>
+                    <td><a href="#js">JavaScript</a href="#"></td>
                 </tr>
             </table>
            
@@ -81,11 +102,22 @@
             </nav>
         </header>
 
-    <table>      
+        <main>
+            <section class="banner">
+                <h2>This is my first blog:) Enjoy!</h2>
 
-        <tr>
-            <td width="40%">
-                <article class="article-html">
+
+            </section>
+            <section class="articles">
+                <article class="article-html" id="html">
+                    <h1>HTML</h1>
+               <p>  HTML (HyperText Markup Language) is the most basic building block of the Web. It describes and defines the content of a webpage. Other technologies besides HTML are generally used to describe a webpage's appearance/presentation (CSS) or functionality (JavaScript).</p>
+
+<p>"HyperText" refers to links that connect webpages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+
+
+                </article>
+                 <article class="article-css" id="css">
                     <h1>CSS</h1>
                     <p> Cascading Style Sheets (CSS) are a stylesheet language used to describe the presentation of a document
                         written in HTML or XML (including XML dialects like SVG or XHTML). CSS describes how elements should
@@ -95,23 +127,7 @@
                         in levels, CSS1 is now obsolete, CSS2.1 is a recommendation, and CSS3, now split into smaller modules,
                         is progressing on the standardization track.</p>
                 </article>
-            </td>
-            <td>
-                <article class="article-css">
-                    <h1>CSS</h1>
-                    <p> Cascading Style Sheets (CSS) are a stylesheet language used to describe the presentation of a document
-                        written in HTML or XML (including XML dialects like SVG or XHTML). CSS describes how elements should
-                        be rendered on screen, on paper, in speech, or on other media.</p>
-
-                    <p>CSS is one of the core languages of the open web and has a standardized W3C specification. Developed
-                        in levels, CSS1 is now obsolete, CSS2.1 is a recommendation, and CSS3, now split into smaller modules,
-                        is progressing on the standardization track.</p>
-                </article>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <article class="article-js">
+                 <article class="article-js" id="js">
                     <h1>JavaScript</h1>
                     <p> JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, object-based,
                         multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of
@@ -130,10 +146,9 @@
                         it is embedded.</p>
 
                 </article>
-            </td>
-        </tr>
-    </table>
-    </main>
+            </section>
+
+        </main>
 </body>
 
 
