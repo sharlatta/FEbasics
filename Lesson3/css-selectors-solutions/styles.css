@@ -1,0 +1,38 @@
+img {
+width: 400px;
+}
+
+.borderedImage {
+    border: 12px outset green;
+}
+
+a[target] {
+    text-decoration: none;
+}
+
+main p {
+    font-style: italic;
+}
+
+.section1 h1 {
+    color: teal;
+}
+
+.section2 h1{
+    color: pink;
+}
+
+.section1 h3, .section2 h3 {
+    font-size: 15px;
+    color: purple;
+}
+
+footer .copyright {
+    font-weight: bold;
+}
+
+a.highlighted {
+    background-color: rgba(45,76,99,0.5);
+    font-weight: bold;
+    color: white;
+}
