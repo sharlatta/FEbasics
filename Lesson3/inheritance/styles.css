@@ -1,0 +1,55 @@
+p {
+    color: green;
+    background-color: yellow;
+    font-style: italic;
+    font-size: 30px;
+}
+
+
+strong {
+    color: red;
+    font-size: 20px;
+}
+
+em {
+    color: blue;
+}
+
+
+p {
+    color: lime;
+    font-size: 45px;
+}
+
+.list {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: square;
+}
+
+.blueList {
+    color: blue;
+ 
+}
+
+.greenList {
+    color: green;  
+
+}
+
+ul ul {
+    color: yellow;
+}
+
+.blueList ul {
+    color: orange;
+}
+.someParagraph a[target] {
+    color: azure;
+}
+
+.someParagraph .someLink {
+    color: violet;    
+}
+

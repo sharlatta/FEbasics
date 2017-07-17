@@ -1,0 +1,62 @@
+body {
+    background-color: rgba(186, 198, 74,0.7)
+}
+
+h1 {
+    font-size: 50px;
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.box {
+    background-color: teal;
+    height: 400px;
+    padding: 20px; 
+    border: 20px outset rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    background-size: cover;
+    margin-top: 40px;
+    display: flex;
+}
+
+.deerBg {
+    background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+    
+}
+
+.elephantBg {
+        background-image: url(images/safari.jpg);
+}
+
+.inner {      
+    height: 300px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;  
+    width: 33%;
+    margin: 10px 5px;
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+.innerLarge {
+    width: 66%;
+    height: 300px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;  
+    margin: 10px 5px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: white;
+}
+
+.innerLarge h2 {
+    color: teal;
+}
+.inner h2 {
+    margin-left: 30px;
+    color: orangered;
+}

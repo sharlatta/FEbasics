@@ -1,0 +1,19 @@
+.box {
+    background-color: teal;
+    width: 500px;
+    height: 400px;
+    padding: 20px; 
+    border: 20px outset rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+    background-size: cover;
+    margin-top: 40px;
+}
+
+.inner {
+    height: 300px;
+    width:300px;  
+    background-color: pink;
+    padding: 10px;  
+    border: 3px solid fuchsia;  
+}
