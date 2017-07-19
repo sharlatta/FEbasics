@@ -1,0 +1,27 @@
+/*Какой селектор выберет все div элементы на странице?*/
+div {}
+/*Селектор для элементов с классом intro*/
+.intro {}
+/*селектор для элемента с id  intro*/
+#intro {}
+/*селектор для заголовка h2, для  которого родитель article*/
+article h2 {}
+/*выбрать элемент с id article, который находится в элементе с классом mainSection*/
+.mainSection  #article {}
+/*селектор для всех ul и ol элементов*/
+ul, ol {}
+/*как выбрать все div и абзацы в элементе с классом container*/
+.container div, .container p {}
+/*все div в элементе с классом container и все абзаци на странице*/
+.container div, p {}
+/*как выбрать все элементи, в которых родитель элемент с id myMenu*/
+#myMenu * {}
+/*выбрать все картинки с атрибутом alt*/
+img[alt]
+/*все ссылки c атрибутом  target и классом pink-link*/
+a[target].pink-link {}
+/*все абзаци с классами и yellowText и bigText*/
+p.yellowText.blueText {}
+
+
+
