@@ -1,0 +1,50 @@
+
+ul {
+    background-color: black;
+}
+
+
+
+article {
+   width: 400px;
+    float: left;
+  /*  padding: 30px;*/
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    height: 500px;
+    color: purple;
+    list-style: none;
+    font-size: 30px;
+    padding-left: 20px;
+ 
+}
+
+nav li {
+   padding-top: 40px;
+}
+
+img {
+    float: right;
+    width: 400px;
+}
+
+.clearfix {
+    clear: left;
+}
+
+.floating {
+    font-size: 50px;
+    float: left;
+    padding: 0 5px 5px;
+    color: salmon;
+    font-weight: bold;
+
+}
