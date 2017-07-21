@@ -1,0 +1,69 @@
+.business-card {
+    width: 500px;
+    height: 300px;
+    background-color: #eee;
+    padding: 20px 30px;
+    margin: 20px;
+    box-sizing: border-box;
+    background: url(images/bg.png) no-repeat;
+    background-size: 100% 30%;
+    border: 1px silver solid;
+    background-position: bottom center;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+.logo {
+    width: 170px;
+}
+
+.info {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.company-name {
+    color: #959CA1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.person-name {
+    font-weight: bold;
+    color: #959CA1;
+    font-size: 24px;
+}
+.person-name span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.company-site, .person-role {
+    color: #15A6BC;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.contact-list {
+    list-style: square;
+    margin-top: 30px;
+   
+}
+
+.contact-list li {
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #514f4f;
+    font-weight: bold;
+}
