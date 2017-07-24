@@ -1,0 +1,66 @@
+.parent {
+    background-color: powderblue;
+    left: 20%;
+    right: 20%;
+    position: absolute;
+
+}
+
+.child {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+}
+
+.child2 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 70px;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+
+.onSale {
+    width: 300px;
+    text-align: center;
+    border: 3px indianred outset;
+    position: relative;
+}
+
+.onSaleImg {
+    width: 170px;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: red;
+}
+.newPrice {
+    font-size: 1.2em;
+    color: green;
+}
+
+.onSaleLabel {
+    position: absolute; 
+    width: 100px;
+    bottom: -30px;
+    right: -40px;    
+}
+
+footer {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+}
+
