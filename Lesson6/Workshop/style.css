@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+header {
+     background-color: #983b7b;
+     height: 100px;
+     padding-right: 250px;
+     width: 300px;
+     position: fixed;
+     top: 200px;
+     right: 200px;
+     border-radius: 20px;
+}
+
+nav {   
+    float: right;        
+}
+
+li {
+    margin: 30px 15px;
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+
+li img {
+    width: 40px;
+    height: 40px;
+}
+
+li span {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    top: -15px;
+    right: -15px;
+    background-color: white;
+    color: #983b7b;
+    font-weight: bold;
+    border-radius: 50%;    
+    text-align: center;
+}
+
+
+.clearfix {
+    clear: both;
+}
