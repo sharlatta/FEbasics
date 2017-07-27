@@ -1,0 +1,37 @@
+a{
+    color: yellow;
+}
+a:visited {
+    color: green;
+}
+a:hover{
+    color:blueviolet;
+}
+
+p {
+    height: 200px;
+    width: 200px;
+    border: 2px green solid;
+}
+
+p:empty {
+    background-color: yellow;
+}
+
+table {
+     border-spacing: 0;
+}
+
+table td {
+     border: 1px silver solid;
+     padding: 10px;
+}
+
+/*tr:last-child {
+    background-color: green;
+}*/
+
+
+tr:nth-last-child(even) td:last-of-type {
+     background-color: green;
+}

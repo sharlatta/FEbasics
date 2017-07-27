@@ -1,0 +1,38 @@
+p::first-letter {
+    font-size: 20px;
+    color: red;
+}
+
+p::first-line {
+    font-variant: small-caps;
+   color: green;
+}
+
+p::before {
+    content: 'Start';
+    color: blue;
+}
+
+p::after {
+    content: '**';
+}
+
+p::selection {
+    background-color: black;
+    color: yellow;
+}
+
+.phone {
+    color: grey;    
+}
+
+.phone::before {
+    background-image: url("http://www.iconsdb.com/icons/preview/caribbean-blue/phone-46-xxl.png");
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    /*content:'\2665';*/
+    content: '';
+    color: yellowgreen;
+    display: inline-block;
+}
