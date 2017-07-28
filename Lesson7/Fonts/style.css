@@ -1,0 +1,25 @@
+/*p {
+    background-color: powderblue;
+    font: italic bold small-caps 20px Arial;
+    letter-spacing: 10px;
+}*/
+
+@font-face {
+    font-family: SweetSensation;
+    src: url("fonts/Sweet Sensations Personal Use.ttf");
+}
+.builtin {
+    font-size: 40px;
+    font-family: SweetSensation;
+    color: pink;
+}
+
+.googled {
+    font-size: 40px;
+    font-family: 'Bellefair', serif;
+}
+
+.rusText {
+    font-size: 40px;
+    font-family: 'Poiret One', cursive;
+}
