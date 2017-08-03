@@ -2,6 +2,10 @@ body {
     margin: 0;
     font-family: Cambay, Arial, Helvetica, sans-serif;
 }
+
+* {
+    box-sizing: border-box;
+}
     /*Top Section*/
 
 .menu {
@@ -103,6 +107,7 @@ body {
 
 .latest-section {
     padding: 40px 0;
+    overflow: hidden;
 }
 .latest-heading {
     font-size: 32px;
