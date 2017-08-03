@@ -107,7 +107,6 @@ body {
 
 .latest-section {
     padding: 40px 0;
-    overflow: hidden;
 }
 .latest-heading {
     font-size: 32px;
@@ -129,7 +128,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex: 0 0 360px;
+    flex: 0 0 30%;
     margin: 0 20px;
     background-color: rgb(27, 29, 39);
 }
