@@ -1,0 +1,151 @@
+   /*div {
+       background-color: powderblue;
+       height: 200px;
+       width: 200px;
+       transition: background-color 2s, height 2s 3s, width 2s;
+       transition-timing-function: ease-in-out;
+       
+     
+   }
+
+   div:hover {
+    width: 300px;
+    height: 300px;
+    background-color: darkcyan;
+   }*/
+
+
+   img {
+       opacity: 0.5;
+       transition: opacity 2s ;
+       transition-timing-function: steps(4, end);
+   }
+
+   img:hover {
+       opacity: 1;
+   }
+
+   .loader {
+       width: 40px;
+       transition: width 5s steps(10);
+       text-align:center;
+       color: white;
+       font-size: 30px;
+       line-height: 30px;
+       background-color: orangered;
+       
+   }
+
+   .loader:hover {
+       width: 400px;
+   }
+
+   .parent {
+       background-color: orangered;
+       height: 400px;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+   }
+
+   .child {
+       width: 150px;
+       height: 150px;
+       background-color: white;
+       font-size: 20px;
+       
+   }
+
+   .parent :nth-child(1) {
+      transform: translate3d(20px,30px,40px);
+
+   }
+
+    .parent :nth-child(2) {
+        transform: rotate(30deg);
+    }
+
+    .parent :nth-child(3) {
+       transform:  skew(10deg, 40deg) translate(-40px, 100px);
+   }
+
+   .parent2 {
+       perspective: 100px;
+   }
+
+   .parent2 div {
+       width: 200px;
+       height: 200px;
+   }
+
+   .child3 {
+       background-color: rgba(240,10,77,0.3);
+       transform: translate3d(30px, 40px, 50px); 
+
+   }
+/*
+   .child4 {
+
+       background-color: rgba(33,77,6, 0.3)
+
+   }*/
+
+
+   .coin1{
+    position:absolute;
+    top:50px;
+    left:50px;
+    width:80px;
+    height:40px;
+    background:#fc0;
+    transform: rotate3d(1,0,0,-55deg) rotate3d(0,0,1,30deg);
+    transform-style: preserve-3d;
+}
+
+.coin1 .coin2
+{
+    background:#444;
+    width:inherit;
+    height:inherit;
+     transform: translate3d(0,0,120px);
+   
+}
+
+.imgContainer {
+    width: 400px;
+    height: 300px;   
+    overflow: hidden; 
+    position: relative;
+}
+
+.imgContainer img {
+    width: 100%;
+    transition: all 2s ease-out;
+    position: absolute;
+}
+
+.imgContainer :nth-child(1) {
+    /*opacity: 1;*/
+    transform: scale(0);
+}
+
+.imgContainer :nth-child(2) {
+    /*opacity: 0;*/
+    /*left: 0;
+    top:0;*/
+     transform: scale(1);
+    
+}
+
+.imgContainer:hover :nth-child(1) {
+    /*opacity: 0;*/
+    transform: scale(1);
+}
+
+.imgContainer:hover :nth-child(2) {
+    left:400px;
+    top: 300px;
+    /*opacity: 1;*/
+    transform: scale(0);   
+
+}

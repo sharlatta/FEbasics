@@ -1,0 +1,60 @@
+.gallery div {
+    height: 400px;
+    width: 500px;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    margin: 30px;
+
+}
+
+.gallery div::after {
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    z-index: 10;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 90px;
+    opacity: 0;
+    transition: opacity 2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.gallery div:hover::after {
+   opacity: 1;
+}
+.gallery div:nth-of-type(1) {
+    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/5f/1e/b9/5f1eb9e7df762aca5c23a5e34e1ce942--indian-photography-amazing-photography.jpg);
+}
+
+.gallery div:nth-of-type(2){
+    background-image: url(https://pbs.twimg.com/profile_images/645666039292915712/_PcOUPdC.jpg);
+    content: 'Charming girl';
+}
+
+
+.gallery div:nth-of-type(3) {
+    background-image: url(http://s.eatthis-cdn.com/media/images/ext/543627202/happy-people-friends.jpg);
+    content: 'Happy friends';
+}
+
+.gallery div:nth-of-type(1)::after {
+        content: 'Some kind man';
+}
+.gallery div:nth-of-type(2)::after {
+        content: 'Charming girl';
+}
+
+.gallery div:nth-of-type(3)::after {
+    content: 'Happy friends';
+}
+
+
+
+   
