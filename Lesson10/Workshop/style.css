@@ -1,0 +1,42 @@
+.container  {
+    position: relative;
+    width: 800px;
+    height: 500px;
+}
+
+.container img {
+    position: absolute;
+    transition: 3s ease;
+    display: block;
+ 
+    
+}
+
+.container .city {
+    width: 100%;
+ 
+
+}
+
+.container .guy {
+    height: 100px;
+    left: 350px;
+    bottom: 50px;
+
+
+}
+
+
+
+
+.container:hover .guy {
+    transform: scale(10);
+  
+    
+}
+
+
+.container:hover .city {
+    transform: scale(3);    
+    height: 100%;
+}
