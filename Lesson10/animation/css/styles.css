@@ -33,27 +33,31 @@ body {
     position: absolute;
     left: -200px;
     top: 0;
-        animation-name: slideIn;
+  
+}
+
+.menu:hover {
+    left: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;  
+    animation-fill-mode: forwards;  
+      animation-name: slideIn;
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
 }
 
-.menu:hover {
-    animation-name: slideIn;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;    
-}
-
 @keyframes slideIn {
+    0% {
+        left: -200px;
+    } 
+
     30% {
         left: -50px;
     }
 
-    100% {
-        left: 0;
-    }
 }
 
 @keyframes beat {
@@ -76,4 +80,37 @@ body {
 
 .heart {
     animation: beat 1s infinite;
+}
+
+
+.container {
+    width: 400px;
+    height: 200px;
+}
+.container div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 20px;
+    display: inline-block;
+}
+
+.container :nth-child(1) {
+    background-color: turquoise;
+    animation: bounceIn 1s infinite;
+}
+.container :nth-child(2) {
+    background-color: yellow;
+     animation: bounceInDown 1s infinite;
+}
+.container :nth-child(3) {
+    background-color: pink;
+    animation: bounceInLeft 1s infinite;
+}
+.container :nth-child(4) {
+    background-color: powderblue;
+    animation: bounceInRight 1s infinite;
+}
+.container :nth-child(5) {
+    background-color: green;
 }
