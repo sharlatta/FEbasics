@@ -1,0 +1,79 @@
+body {
+    margin: 0
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    background-color: powderblue; 
+    border-radius: 50%;
+}
+
+.handle {
+    background-color: black;
+    width: 5px;
+    height: 70px;
+    left: 50%;
+    transform: translateX(100px);
+    animation: clock 5s infinite; 
+    transform-origin: center;
+    
+}
+
+@keyframes clock{
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.menu {
+    background-color: rgba(0,0,0,0.8);
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    left: -200px;
+    top: 0;
+        animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+.menu:hover {
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;    
+}
+
+@keyframes slideIn {
+    30% {
+        left: -50px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes beat {
+    10% {
+        transform: scale(1.5);
+    }
+    30% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.heart {
+    animation: beat 1s infinite;
+}
