@@ -2,39 +2,28 @@
     position: relative;
     width: 800px;
     height: 500px;
+    overflow: hidden;
 }
 
 .container img {
     position: absolute;
     transition: 3s ease;
-    display: block;
- 
-    
+    display: block;    
 }
 
 .container .city {
     width: 100%;
- 
-
 }
 
 .container .guy {
     height: 100px;
     left: 350px;
-    bottom: 50px;
-
-
+    top: 350px;
 }
-
-
-
 
 .container:hover .guy {
-    transform: scale(10);
-  
-    
+    transform: scale(7);    
 }
-
 
 .container:hover .city {
     transform: scale(3);    

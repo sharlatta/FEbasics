@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <form action="http://facebook.com">
+        <fieldset>
+            <legend>Personal info</legend>
+            <div>
+                <label for="name">First Name</label>
+                <input type="text" name="name" placeholder="Enter your name..." required>
+            </div>
+            <div>
+                <label for="name">Last Name</label>
+                <input type="text" name="name">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <div>
+                <label for="degree">Education</label>
+                <input type="radio" name="degree" value="Undergraduate">
+                <input type="radio" name="degree" value="Specialist">
+                <input type="radio" name="degree" value="Master">
+            </div>
+            <div>
+                <label for="name">Age</label>
+                <select>
+                    <optgroup label="Children">
+                           <option>under 17</option>
+                            <option>17-25</option>
+                    </optgroup>
+                 
+                    <optgroup label="Adults">
+                        <option>25-37</option>
+                        <option>38-43</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <label for="number" >Num</label>
+            <input type="number" name="num" min="7" max="40">
+             <label for="number">Date</label>
+            <input type="time" name="num" min="7" max="40">
+            <label for="range">Range</label>
+            <input type="range" name="num" min="15" max="20" step="0.5">
+        </fieldset>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
