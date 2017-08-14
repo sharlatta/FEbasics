@@ -1,0 +1,47 @@
+.header {
+    position: relative;
+    padding: 80px 15px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    background-color: #6883cc;
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.section {
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.section h4 {
+    color: #94a3a8;
+    margin: 20px 0;
+}
+
+.section .card {
+    border: none;
+}
+
+.section img {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.6s ease;
+}
+
+.section img:hover {
+    transform: scale(1.1);
+}
+
+.carousel.slide {
+    height: 400px;
+    overflow: hidden;
+}
