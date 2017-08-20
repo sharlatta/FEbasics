@@ -1,0 +1,14 @@
+{
+  "name": "skiproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o assets/css/"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

@@ -1,0 +1,93 @@
+@import url("https://unpkg.com/bootstrap@4.0.0-beta/scss/bootstrap.scss");
+@import 'mixins.scss';
+
+$primary-color: #333333;
+$secondary-color: #f9f600;
+$highlight-color: #004eb3;
+$caption-font: 'Montserrat',
+sans-serif;
+$main-font: 'Open Sans', sans-serif;
+
+.container-fluid {
+    p {
+        text-align: center;
+    }
+    .heading {
+        @include basic-font($primary-color,
+        50px,
+        true);
+        &::after {
+            content: ' ';
+            display: block;
+            width: 8.5rem;
+            height: 3px;
+            margin: 0.6667em 0;
+            background-color: $secondary-color;
+            margin: 0 auto;
+        }
+    }
+    .small-heading {
+        @include basic-font(#c4c4c4,
+        14px,
+        true);
+    }
+    .caption {
+        @include basic-font($primary-color,
+        24px);
+        &:hover {
+            color: $highlight-color;
+        }
+    }
+    .caption-small {
+        color: $primary-color;
+    }
+    button {
+        @include basic-font(white,
+        12px,
+        true);
+        background-color: $primary-color;
+        padding: 15px 18px;
+        border-radius: 4px;
+        border: none;
+        box-sizing: border-box;
+        @include small-screen() {
+            &:hover {
+                background-color: $highlight-color;
+            }
+        }
+        @include large-screen() {
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+
+.full-background {
+    background-size: cover;
+    background-position: bottom center;
+  //  background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.top-section {
+    @extend .full-background;
+    background-image: url(../images/bg.jpg);
+    height: 700px;
+}
+
+.middle-section {
+    @extend .full-background;
+    height: 600px;
+    background-image: url(../images/bg2.jpg);    
+    box-sizing: border-box;
+}
+
+// .css-classes-unite {
+//     @extend .col-sm-12;
+//     @extend .col-lg-4;
+//     @extend .d-flex;
+//     @extend .flex-column;
+//     @extend .justify-content-center;
+//     @extend .align-items-center;
+// }
