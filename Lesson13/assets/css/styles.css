@@ -1,14 +1,14 @@
 @import url("https://unpkg.com/bootstrap@4.0.0-beta/scss/bootstrap.scss");
-.container-fluid p {
+.container p {
   text-align: center; }
 
-.container-fluid .heading {
+.container .heading {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #333333;
   font-size: 50px;
   text-transform: uppercase; }
-  .container-fluid .heading::after {
+  .container .heading::after {
     content: ' ';
     display: block;
     width: 8.5rem;
@@ -17,26 +17,26 @@
     background-color: #f9f600;
     margin: 0 auto; }
 
-.container-fluid .small-heading {
+.container .small-heading {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #c4c4c4;
   font-size: 14px;
   text-transform: uppercase; }
 
-.container-fluid .caption {
+.container .caption {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #333333;
   font-size: 24px;
   text-transform: uppercase; }
-  .container-fluid .caption:hover {
+  .container .caption:hover {
     color: #004eb3; }
 
-.container-fluid .caption-small {
+.container .caption-small {
   color: #333333; }
 
-.container-fluid button {
+.container button {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: white;
@@ -48,10 +48,10 @@
   border: none;
   box-sizing: border-box; }
   @media screen and (max-width: 767px) {
-    .container-fluid button:hover {
+    .container button:hover {
       background-color: #004eb3; } }
   @media screen and (min-width: 768px) {
-    .container-fluid button:hover {
+    .container button:hover {
       background-color: #f9f600; } }
 
 .full-background, .top-section, .middle-section {
@@ -67,3 +67,36 @@
   height: 600px;
   background-image: url(../images/bg2.jpg);
   box-sizing: border-box; }
+
+.trasparent-0 {
+  opacity: 0; }
+
+.trasparent-1 {
+  opacity: 0.1; }
+
+.trasparent-2 {
+  opacity: 0.2; }
+
+.trasparent-3 {
+  opacity: 0.3; }
+
+.trasparent-4 {
+  opacity: 0.4; }
+
+.trasparent-5 {
+  opacity: 0.5; }
+
+.trasparent-6 {
+  opacity: 0.6; }
+
+.trasparent-7 {
+  opacity: 0.7; }
+
+.trasparent-8 {
+  opacity: 0.8; }
+
+.trasparent-9 {
+  opacity: 0.9; }
+
+.trasparent-10 {
+  opacity: 1; }

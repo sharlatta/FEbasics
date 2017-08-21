@@ -1,5 +1,5 @@
 $slider-width: 100%;
-$slider-height: 500px;
+$slider-height: 400px;
 $num-of-slides: 5;
 $step: (100%-10%)/$num-of-slides;
 
@@ -24,11 +24,13 @@ $step: (100%-10%)/$num-of-slides;
     width: $slider-width;
     height: $slider-height;
     overflow: hidden;
+
 }
 
 .slider {
     position: absolute;
     width: 500%;
+    overflow-y: hidden;
     height: $slider-height;
     animation-name: slider;
     animation-duration: 5s;
@@ -40,4 +42,6 @@ $step: (100%-10%)/$num-of-slides;
 
 .slider img {
     width: 100%;
+    height: auto;   
+    object-fit: cover; 
 }

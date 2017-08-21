@@ -8,7 +8,7 @@ $caption-font: 'Montserrat',
 sans-serif;
 $main-font: 'Open Sans', sans-serif;
 
-.container-fluid {
+.container {
     p {
         text-align: center;
     }
@@ -83,6 +83,11 @@ $main-font: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
+@for $i from 0 through 10 {
+    .trasparent-#{$i} {
+        opacity: $i*0.1;
+    }
+}
 // .css-classes-unite {
 //     @extend .col-sm-12;
 //     @extend .col-lg-4;

@@ -1,0 +1,102 @@
+// Small devices (landscape phones, 576px and up)
+$small-screen: 500px;
+$medium-screen: 750px;
+$large-screen: 900px;
+$xlarge-screen: 1100px;
+@mixin sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container,.container-fluid {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+[class^="col-"] {
+    box-sizing: border-box;
+}
+
+@mixin cols($screen-size, $prefix) {
+    @for $i from 1 through 12 {
+        .col-#{$prefix}-#{$i} {
+            max-width: 100% / 12 *$i;
+        }
+    }
+}
+
+@mixin pads() {
+    @for $i from 1 through 5 {
+        .side-pad-#{$i} {
+            padding: 0 10px *$i;
+        }
+    }
+}
+
+@include pads();
+
+@include sm {
+    .container {
+        width: $small-screen;
+    }
+    @include cols($small-screen, 'sm');
+}
+
+@include md {
+    .container {
+        width: $medium-screen;
+    }
+    @include cols($medium-screen, 'md');
+}
+
+@include lg {
+    .container {
+        width: $large-screen;
+    }
+    @include cols($large-screen, 'lg');
+}
+
+@include xl {
+    .container {
+        width: $xlarge-screen;
+    }
+    @include cols($xlarge-screen, 'xl');
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

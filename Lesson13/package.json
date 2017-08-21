@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "author": "",
+  "author": "Olena Horal-Koretska",
   "license": "ISC",
   "scripts": {
     "sass": "node-sass -w sass/ -o assets/css/"
