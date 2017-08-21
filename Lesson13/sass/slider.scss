@@ -1,19 +1,22 @@
-$slider-width: 300px;
-$slider-height: 200px;
+$slider-width: 100%;
+$slider-height: 500px;
+$num-of-slides: 5;
+$step: (100%-10%)/$num-of-slides;
 
 @keyframes slider {
+    0% {left: 0;}
     
-    @for $i from 0 to 5 {
-        $frame: 100%/5*$i;
-        $position: ($i*-$slider-width);
+    @for $i from 1 through $num-of-slides {
+        $frame: $step*$i;
+        $position: ($i - 1)* -$slider-width;
         #{$frame} {
             left: $position;
         }
-    }
+    }     
 
     100% {
-        left: -800px;
-    }
+         left: ($num-of-slides - 1) * -$slider-width;
+    }  
 }
 
 .container {
@@ -25,13 +28,11 @@ $slider-height: 200px;
 
 .slider {
     position: absolute;
-    width: $slider-width;
+    width: 500%;
     height: $slider-height;
     animation-name: slider;
     animation-duration: 5s;
-    animation-timing-function: ease-in;
     left: 0;
-    animation-delay: 1s;
     display: flex;
     animation-iteration-count: infinite;
     animation-direction: alternate;
