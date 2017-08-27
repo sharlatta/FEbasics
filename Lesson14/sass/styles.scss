@@ -1,0 +1,27 @@
+$primary-color:#3cb878;
+$highlight-color:#06bee6;
+.gradient {
+    background: linear-gradient(to bottom, $primary-color, $highlight-color);
+}
+
+header {
+    height: 100vh;
+    color: #ffffff;
+    padding: 100px;
+    @extend .gradient;
+    .button-gr {
+        @extend .gradient;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 15px 35px;
+        border-radius: 100px;
+        transition: 400ms; 
+        cursor: pointer; 
+
+        &:hover {
+            letter-spacing: 3px;
+            box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
