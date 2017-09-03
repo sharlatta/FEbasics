@@ -1,0 +1,6 @@
+{
+"use": ["postcss-prettify"],
+"input": "./assets/css/styles.css",
+"output": "asseets/css/styles.css",
+"local-plugins": true
+}
