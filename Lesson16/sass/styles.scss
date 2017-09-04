@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+
+
+@import 'modules/_my-team';
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}

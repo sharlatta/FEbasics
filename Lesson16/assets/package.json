@@ -1,0 +1,24 @@
+{
+  "name": "AppposCase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Olena Horal-Koretska",
+  "license": "ISC",
+  "scripts": {
+    "preinstall": "npm install --global postcss-cli autoprefixer",
+    "autoprefixer": "postcss assets/css/*.css --use autoprefixer -d assets/css -w",
+    "prettify": "postcss -c postcss-config.json",
+    "sass": "node-sass -w sass/ -o assets/css/",
+    "dev": "concurrently \"npm run sass\" \"npm run autoprefixer\""
+  },
+  "browserslist": [
+    "> 1%",
+    "last 20 versions"
+  ],
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "node-sass": "^4.5.3",
+    "postcss-prettify": "^0.3.4"
+  }
+}
