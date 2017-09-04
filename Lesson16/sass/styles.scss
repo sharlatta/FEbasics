@@ -2,9 +2,12 @@
 @import 'mixins';
 @import 'fonts';
 
-
+@import 'modules/_header';
 @import 'modules/_my-team';
-
+@import 'modules/_popular-categories';
+@import 'modules/_customer-reviews';
+@import 'modules/_footer';
+@import 'modules/_recent-news';
 body {
     margin: 0;
 }

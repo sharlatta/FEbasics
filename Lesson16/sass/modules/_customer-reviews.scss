@@ -1,0 +1,47 @@
+.customer-reviews {
+    background-color: #5dc2d7;
+    background-image: url(http://food-drop.themerex.net/wp-content/uploads/2016/12/food-pattern-15.png?id=577);
+    background-position: 0 0;
+    background-repeat: repeat;
+    padding: 100px 0;
+    > .title {
+        font-family: "Amatic";
+        text-transform: uppercase;
+        font-size: 90px;
+        line-height: 1.3em;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .swiper-container {
+        max-width: 1220px;
+        height: 420px;
+        .swiper-slide {
+            opacity: 0.6;
+            &.swiper-slide-active {
+                opacity: 1;
+            }
+            .item {
+                border: 2px dashed #fff;
+                border-radius: 30px;
+                padding: 24px 80px;
+                text-align: center;
+                color: #fff;
+                p {
+                    font-size: 1.15em;
+                    line-height: 1.9em;
+                }
+                .author {
+                    .title {
+                        text-transform: uppercase;
+                        margin-bottom: 0;
+                    }
+                    .subtitle {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
+

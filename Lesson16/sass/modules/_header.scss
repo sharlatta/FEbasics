@@ -1,0 +1,231 @@
+.header-section {
+
+@font-face {
+  font-family: "Amatic";
+  src: url("../fonts/amatic.woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Rustic";
+  src: url("../fonts/nexa-rust.otf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	top: 60px;
+	left: 191px;
+	height: 90px;
+	width: 640px;
+	position: absolute;
+	z-index: 1;
+	background-size: contain;
+	cursor: pointer;
+}
+.header {
+	position: relative;
+	overflow: hidden;
+	height: 800px;
+	max-width: 100%;
+	background-image:  url("http://food-drop.themerex.net/wp-content/uploads/2016/12/home-top.jpg?id=840");
+	background-size: cover;
+}
+
+.caption {
+	position: absolute;
+	height: 300px;
+	left: 120px;
+	top: 275px;
+}
+
+h2 {
+	position: absolute;
+	margin-left: 75px;
+	font-size: 50px;
+      font-family: 'Rustic';
+      font-weight: normal;
+	color: grey;
+}
+
+h1 {
+	position: absolute;
+	display: inline-block;
+	margin-top: 1px;
+	padding-left: 250px;
+	font-size: 160px;
+	text-transform: uppercase;
+	color: #bac64a;
+      font-family: 'Amatic'; 
+}
+
+.paragragh {
+	font-size: 20px;
+	color: lightgrey;
+	margin-left: 75px;
+	padding-top: 160px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	max-width: 48%; 
+}
+
+button {
+	position: absolute;
+	top: 623px;
+	display: inline-block;
+	background-color: #87CEFA;
+	height: 80px;
+	width: 240px;
+	border-radius: 10%;
+	border: none;
+	box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.download {
+	color: white;
+	font-size: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.store {
+	color: white;
+	font-size: 25px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.apple {
+	left: 191px;
+}
+
+.google {
+	left: 445px;
+}
+
+.icon {
+	color: white;
+	font-size:32px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 7px;
+}
+
+.icon i::before {
+  color: white;
+}
+
+.clearfix {
+	content: "";
+	clear: both;
+}
+.btn, .menu-btn, .menu-close-btn {
+  padding: 16px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-size: 18px;
+  color: white;
+  right: 40px;
+  top: 40px;
+  -webkit-box-shadow: 0px 4px 0px 0px #98A23D;
+          box-shadow: 0px 4px 0px 0px #98A23D;
+}
+
+.menu-btn {
+  background-color: #bac64a;
+  position: fixed;
+}
+
+.menu-close-btn {
+  background-color: #bac64a;
+  position: absolute;
+}
+
+.menu-container {
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  background-color: #bac64a;
+  position: fixed;
+  text-align: center;
+  -webkit-transition: 0.35s ease-in;
+  -o-transition: 0.35s ease-in;
+  transition: 0.35s ease-in; }
+  .menu-container.opened {
+    height: 100vh; }
+  .menu-container ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Amatic';
+    font-size: 80px;
+    color: white; }
+    .menu-container ul li {
+      cursor: pointer; }
+      .menu-container ul li:hover {
+        color: #474747;
+}
+
+.side-bar {
+  width: 60px;
+  height: 200px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background-color: #edebe4;
+  z-index: 1;
+  position: fixed;
+  top: 250px;
+  left: 30px;
+}
+
+.child {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+}
+
+.child:nth-child(1) {
+  margin-top: 30px;
+  width: 13px;
+  height: 13px;
+  background-color: #bac64a;
+}
+
+.child:hover {
+  background-color: #bac64a;
+}
+
+.point {
+  position: absolute;
+  top: -13px;
+  left: -1000px;
+  color: white;
+  font-size: 9px;
+  background-color: #bac64a;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.child:hover .point {
+  top: -13px;
+  left: 30px;
+  transition: left 0.7s;
+  }
+
+body {
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+}

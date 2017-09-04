@@ -1,0 +1,126 @@
+$second: 0.5s;
+.popular-categories {
+    background-color: #F4F2EE;
+    text-align: center;
+    height: 1000px;
+    h1 {
+        font-family: "Amatic";
+        font-size: 90px;
+        margin: 0;
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    .categories {
+        display: flex;
+        justify-content: space-around;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .food {
+        background-color: #fff;
+        width: 30%;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .food:hover {
+        box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.4);
+    }
+    .food:hover .bottom-section {
+        top: 20%;
+        color: #fff;
+    }
+    .food:hover .bottom-section h3 {
+        color: #fff;
+    }
+    .food:hover .bottom-section p {
+        color: #fff;
+    }
+    .food:hover .upper-section {
+        border-radius: 0;
+        margin-top: -5em;
+    }
+    .food:hover .fond {
+        opacity: 0.8;
+        border-radius: 0;
+        margin-top: -5em;
+    }
+    .upper-section {
+        background: url(../images/image-1.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 50px 0px 150px 150px / 0px 0px 50px 50px;
+        width: 100%;
+        height: 27.6em;
+        margin-top: -11em;
+        transition: $second;
+    }
+    .fond {
+        background-color: $blue-color;
+        opacity: 0;
+        border-radius: 50px 0px 150px 150px / 0px 0px 50px 50px;
+        width: 100%;
+        height: 27.6em;
+        margin-top: -11em;
+        transition: $second;
+    }
+    .second {
+        background: url(../images/image-2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .third {
+        background: url(../images/image-3.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .bottom-section {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 18%;
+        z-index: 5;
+        transition: $second;
+    }
+    .bottom-section h3 {
+        color: $text-color;
+        font-family: "Rustic";
+        font-size: 30px;
+        font-weight: normal;
+        margin: 0;
+        padding-top: 40px;
+        transition: $second;
+    }
+    .bottom-section p {
+        font-family: "Merriweather Sans", sans-serif;
+        color: $gray-color;
+        transition: $second;
+    }
+    .button {
+        position: absolute;
+        bottom: 10%;
+        left: 31%;
+        width: 40%;
+        transition: 0.3s;
+    }
+    .button a {
+        font-family: "Merriweather Sans", sans-serif;
+        font-size: 12px;
+        background-color: $blue-color;
+        border-radius: 10em;
+        box-shadow: 0px 3px 0px 0px rgba(84, 174, 193, 1);
+        color: #fff;
+        letter-spacing: 0.1em;
+        padding: 11% 15%;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .button a:hover {
+        box-shadow: 0px 6px 0px 0px rgba(84, 174, 193, 1);
+    }
+    .button:hover {
+        transform: translate(0px, -3px);
+    }
+}

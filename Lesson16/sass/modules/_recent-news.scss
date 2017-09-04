@@ -1,0 +1,89 @@
+
+
+@mixin btn-properties($border-radius, $box-shadow, $color) {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    color: $color;
+}
+
+
+.topic {
+    font-family: 'Amatic';
+    font-size: 80px;
+    color: black;
+    margin: 100px 0 30px 100px;
+}
+
+.block {
+    background-color: $background-color;
+    border-radius: 10px;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 20px;
+    position: relative;
+    margin: 10px 0 10px 100px;
+}
+
+.theme {
+    padding: 40px 0 0 50px;
+}
+
+.theme a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.theme a:hover {
+    color: $highlight-color;
+    text-decoration: none;
+}
+
+.auther {
+    padding: 15px 0 40px 50px;
+    font-size: 12px;
+    color: grey;
+}
+
+.auther a {
+    color: $highlight-color;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.auther a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-arrow {
+    @include btn-properties(50%, 0px 4px 0px 0px #f2f2f2, $highlight-color);
+    padding: 13px 21px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    transition: 0.5s;
+}
+
+.btn-arrow:hover {
+    @include btn-properties(0, 0px 4px 0px 0px $highlight-color, white);
+    background-color: $highlight-color;
+}
+
+.btn-all-posts {
+    @include btn-properties(20px, 0px 4px 0px 0px $highlight-color, white);
+    padding: 10px 30px;
+    background-color: $highlight-color;
+    font-size: 24px;
+    margin-left: 100px;
+}
+
+.btn-all-posts:hover {
+    padding-top: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-p {
+    margin: 50px 0 100px 0;
+}
