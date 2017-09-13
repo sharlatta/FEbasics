@@ -1,0 +1,58 @@
+.instagram-stream {
+    .wrapper {
+        display: flex;
+    }
+    .wrapper div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex: 1 1 20%;
+        height: 20vw;
+    }
+    .wrapper div:nth-child(1) {
+        background-color: #5dc2d7;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .instagram {
+        font: bold 50px "Amatic";
+    }
+    .hashTag {
+        font: 11px sans-serif;
+    }
+    .wrapper div:nth-child(2) {
+        background-image: url("../images/instagram/2.jpg");
+    }
+    .wrapper div:nth-child(3) {
+        background-image: url("../images/instagram/3.jpg");
+    }
+    .wrapper div:nth-child(4) {
+        background-image: url("../images/instagram/4.jpg");
+    }
+    .wrapper div:nth-child(5) {
+        background-image: url("../images/instagram/5.jpg");
+    }
+    @media (max-width: 767px) {
+        .wrapper {
+            flex-wrap: wrap;
+        }
+        .wrapper div:first-child {
+            flex-basis: 100%;
+        }
+    }
+    @media (min-width: 560px) and (max-width: 767px) {
+        .wrapper div {
+            flex-basis: 25%;
+            height: 30vh;
+        }
+    }
+    @media (max-width: 560px) {
+        .wrapper div {
+            flex-basis: 50%;
+            min-height: 50vw;
+        }
+    }
+}

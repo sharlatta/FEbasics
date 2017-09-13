@@ -78,6 +78,7 @@ $icon-color: rgba(255, 255, 255, 0.7);
                 }
             }
         }
+        
         @include large-screen() {
             width: 1000px;
         }
