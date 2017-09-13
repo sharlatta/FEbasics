@@ -4,7 +4,8 @@
     background-position: 0 0;
     background-repeat: repeat;
     padding: 100px 0;
-    > .title {
+
+    >.title {
         font-family: "Amatic";
         text-transform: uppercase;
         font-size: 90px;
@@ -13,9 +14,11 @@
         color: #fff;
         margin-bottom: 30px;
     }
+
     .swiper-container {
         max-width: 1220px;
         height: 420px;
+        
         .swiper-slide {
             opacity: 0.6;
             &.swiper-slide-active {
@@ -44,4 +47,3 @@
         }
     }
 }
-

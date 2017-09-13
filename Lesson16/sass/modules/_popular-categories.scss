@@ -2,18 +2,16 @@ $second: 0.5s;
 .popular-categories {
     background-color: #F4F2EE;
     text-align: center;
-    height: 1000px;
+    padding: 100px 50px;
     h1 {
         font-family: "Amatic";
         font-size: 90px;
         margin: 0;
-        padding-top: 100px;
         padding-bottom: 40px;
     }
     .categories {
         display: flex;
         justify-content: space-around;
-        width: 1200px;
         margin: 0 auto;
     }
     .food {
