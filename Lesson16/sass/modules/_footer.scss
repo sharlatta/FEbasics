@@ -10,6 +10,7 @@
     }
     .footer-menu {
         display: flex;
+        flex-wrap: wrap;
         li {
             margin-left: 40px;
             list-style: none;
@@ -18,6 +19,7 @@
     .footer-icons i {
         margin-left: 25px;
     }
+    
     @media screen and (max-width:768px) {
         .footer {
             flex-direction: column;

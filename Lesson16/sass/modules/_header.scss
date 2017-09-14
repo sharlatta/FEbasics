@@ -20,6 +20,11 @@
         position: absolute;
         z-index: 1;
         cursor: pointer;
+    @include small-screen(){
+      img {
+        width: 75%;
+      }
+    }
     }
     .header {
         position: relative;
