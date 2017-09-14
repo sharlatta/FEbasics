@@ -203,3 +203,107 @@ body {
 .clearfix {
     clear: both;
 }
+
+/*footer*/
+.bottom-section {
+    background: url('http://octane.progressionstudios.com/wp-content/uploads/2015/10/footer-background.jpg?id=39');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    padding: 100px 40px;
+     text-align: center;
+}
+
+.bottom-section h1 {   
+    font-size: 45px;
+    color: #24cdc1;
+    font-style: italic;
+}
+
+.bottom-section h1 span {
+    color: #fff;
+}
+
+.bottom-section button {
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;   
+    background-color:  #115b9b;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.bottom-section button:hover {
+    background-color: #063156;
+}
+
+.links {
+    background-color: #1E2029;
+}
+.links h3 {
+    color: #24cdc1;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;    
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    font-size: 13px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.contacts .bordered {
+    border-top: 1px rgba(255,255, 255,0.14) solid;
+    border-bottom: 1px rgba(255,255, 255,0.14) solid;
+}
+
+.contacts {
+    color: #24cdc1;
+    background-color: #1E2029;
+}
+.contacts i {
+    cursor: pointer;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.contacts i:hover {
+    color: #24cdc1;
+}
+
+.contacts input {
+    color: #fff;
+    background-color:#35373F;
+    border: none;
+    font-style: italic;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 12px;    
+    line-height: 18px;
+}
+
+.contacts button {
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;   
+    background-color:  #115b9b;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    line-height: 18px;
+    position: relative;
+    left: -8px;
+}
+
+.contacts input::placeholder {
+    color: #fff;
+}
