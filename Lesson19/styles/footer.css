@@ -1,0 +1,38 @@
+.clients-section {
+    padding: 40px 0;
+    text-align: center; 
+    font-family: Play, sans-serif;
+}
+.clients-section  h2 {  
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;   
+    text-align: center;
+    margin: 30px 0;
+}
+
+.clients-section  h2::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    background-color: #29aae3;
+    height: 2px; 
+    bottom: -10px;
+    left: 50%; 
+    margin-left: -35px;      
+}
+
+.clients-section .list img {
+    height: 30px;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #222222;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 14px;
+}
