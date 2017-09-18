@@ -1,0 +1,30 @@
+.contact-info div {
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Play, sans-serif;
+    padding: 0 12px;
+    border-right: 1px silver solid;
+}
+
+.contact-info div:last-child {
+    border-right: none;
+}
+
+.contact-info i {
+    margin-right: 9px;
+}
+
+.contact-info a,
+.contact-info span,
+.contact-info i {
+    color: #333;
+}
+
+.contact-info a:hover,
+.contact-info span:hover,
+.contact-info i:hover {
+    color: #29aae3;
+    cursor: pointer;
+}
