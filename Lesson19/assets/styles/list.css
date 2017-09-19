@@ -1,0 +1,114 @@
+.list-element {
+    background-color: #bfbfbf;
+    height: 500px;
+    margin-top: 50px;
+    padding: 0;
+    position: relative;
+    font-family: 'Play';
+}
+
+.img-block {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.img-block img {
+    width: 100%;
+}
+
+.img-block .list-img {
+    width: 100%;
+    height: 100%;
+    background: url(../images/apart1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.list-for-sale{
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #1a75ff;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.img-block .hover-text {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font: 25px 'Play';
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.img-block:hover .hover-text {
+    top: 40%;
+    opacity: 1;
+}
+
+.list-element p {
+    padding: 0 20px;
+    font: 15px 'Play';
+}
+
+.list-element .list-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.list-btn {
+    padding: 5px 30px;
+    border: 3px solid #1a75ff;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    transition: 0.5s;
+}
+
+.list-btn:hover {
+    background-color: #1a75ff;
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes list-animation {
+    from {
+        top: 10%;
+        opacity: 0;
+    }
+    to {
+        top: 40%;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1078px) {
+    .list-element {
+        height: 650px;
+    }
+}

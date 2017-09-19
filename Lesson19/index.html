@@ -5,18 +5,27 @@
   <title>My Home - Real Estate</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Play"
+        rel="stylesheet">
 
-  <!--custom-styles-->
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/footer.css">
+  <!--header-footer-styles-->
+  <link rel="stylesheet" href="assets/styles/header.css">
+  <link rel="stylesheet" href="assets/styles/slider.css">
+  <link rel="stylesheet" href="assets/styles/footer.css">  
+  <link rel="stylesheet" href="assets/styles/list.css">
+  <link rel="stylesheet" href="assets/styles/cities.css">
+  <link rel="stylesheet" href="assets/styles/testimonials.css">
 
 </head>
 
@@ -27,7 +36,8 @@
     <section class="contact-info col-md-9 col-sm-12 offset-md-3">
       <div>
         <i class="fa fa-phone"></i>
-        <a class="phone" href="tel:1233456789">(123) 345-6789 </a>
+        <a class="phone"
+           href="tel:1233456789">(123) 345-6789 </a>
       </div>
       <div>
         <i class="fa fa-pin"></i>
@@ -41,10 +51,236 @@
       </div>
       <div>
         <i class="fa fa-envelope"></i>
-        <a class="mail" href="mailto:support@tangibledesign.net">support@tangibledesign.net</a> </div>
+        <a class="mail"
+           href="mailto:support@tangibledesign.net">support@tangibledesign.net</a> </div>
       <div><span>Login / Register</span></div>
     </section>
   </header>
+
+  <section class="row slider">
+    <div id="carouselExampleControls"
+         class="carousel slide"
+         data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="caption">
+            <h2 class="flatCaption">Modern apartment in<br /> the city center</h2>
+            <p class="address">122-140 N Morgan St,<br />Chicago, IL 60607, USA</p>
+            <div class="flatPrice">$ 1.300.000</div>
+          </div>
+          <img class="d-block w-100"
+               src="https://myhometheme-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/01/modern-apartment-in-the-city-center.jpg"
+        
+               alt="First slide">
+        </div>
+
+        <div class="carousel-item">
+          <div class="caption2">
+            <h2 class="flatCaption">Minimalist and bright flat</h2>
+            <p class="address">518-520 8th Ave,<br />New York, NY 10018, USA</p>
+            <div class="flatPrice">$ 850.000</div>
+          </div>
+          <img class="d-block w-100"
+               src="https://myhometheme-2-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/01/minimalist-and-bright-flat.jpg"
+        
+               alt="Second slide">
+        </div>
+
+        <div class="carousel-item">
+          <div class="caption">
+            <h2 class="flatCaption">Bright apartment</h2>
+            <p class="address">333-399 N Mission Rd, <br />Los Angeles, CA 90033, USA</p>
+            <div class="flatPrice">$ 2.300.000</div>
+          </div>
+          <img class="d-block w-100"
+               src="https://myhometheme-2-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/01/bright-apartment.jpg"
+        
+               alt="Third slide">
+        </div>
+
+        <div class="carousel-item">
+          <div class="caption">
+            <h2 class="flatCaption">Two storey modern flat</h2>
+            <p class="address">65-4 68th Ave, <br />Ridgewood, NY 11385, USA</p>
+            <div class="flatPrice">$ 7.000/month</div>
+          </div>
+          <img class="d-block w-100"
+               src="https://myhometheme-2-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/01/two-storey-modern-flat.jpg"
+        
+               alt="Forth slide">
+        </div>
+
+      </div>
+      <a class="carousel-control-prev"
+         href="#carouselExampleControls"
+         role="button"
+         data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+      <a class="carousel-control-next"
+         href="#carouselExampleControls"
+         role="button"
+         data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+    </div>
+  </section>
+
+  <div class="row list-section">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4 col-xs-12 list-element">
+      <div class="img-block">
+        <div class="list-for-sale">for sale</div>
+        <div class="overlay"></div>
+        <div class="list-img"></div>
+        <div class="hover-text">This is the best apart ever...</div>
+      </div>
+      <div class="list-info">
+        <p class="list-name">Modern apartment in the city center</p>
+        <p>122-140 N Morgan St, Chicago, IL 60607, USA</p>
+        <p>$ 1.300.000</p>
+        <p>Bedrooms: 3 Bathrooms: 2 Property size: 1100 ft²</p>
+      </div>
+      <a href="#"
+         class="list-btn">Details</a>
+    </div>
+    <div class="col-sm-2"></div>
+
+    <div class="col-sm-4 col-xs-12 list-element">
+      <div class="img-block">
+        <div class="overlay"></div>
+        <div class="list-img"></div>
+        <div class="hover-text">This is the best apart ever...</div>
+      </div>
+      <div class="list-info">
+        <p class="list-name">Modern apartment in the city center</p>
+        <p>122-140 N Morgan St, Chicago, IL 60607, USA</p>
+        <p>$ 1.300.000</p>
+        <p>Bedrooms: 3 Bathrooms: 2 Property size: 1100 ft²</p>
+      </div>
+      <a href="#"
+         class="list-btn">Details</a>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <!-- start cities block -->
+  <div class="cites">
+    <div class="container">
+      <h2 class="text-center">CITIES</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide"
+             href="#">
+            <div class="wrapper">
+              <img src="assets/images/seattle-400x300.jpg"
+                   alt="">
+              <h3>ONE</h3>
+            </div>
+          </a>
+          <a class="swiper-slide"
+             href="#">
+            <div class="wrapper">
+              <img src="assets/images/chicago-400x300.jpg"
+                   alt="">
+              <h3>TWO</h3>
+            </div>
+          </a>
+          <a class="swiper-slide"
+             href="#">
+            <div class="wrapper">
+              <img src="assets/images/los-angeles-400x300.jpg"
+                   alt="">
+              <h3>THREE</h3>
+            </div>
+          </a>
+          <a class="swiper-slide"
+             href="#">
+            <div class="wrapper">
+              <img src="assets/images/new-york-400x300.jpg"
+                   alt="">
+              <h3>FOUR</h3>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end cities block -->
+
+  <section class="testimonials">
+    <div>
+      <h1> TESTIMONIALS </h1>
+
+
+    </div>
+
+
+    <div id="carouselExampleIndicators"
+         class="carousel slide"
+         data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"></li>
+        <li data-target="#carouselExampleIndicators"
+            data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators"
+            data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner"
+           role="listbox">
+        <div class="carousel-item active">
+          <div> We went down the lane, by the body of the man in black, sodden now from the <br> overnight hail, and broke into
+            the woods at the foot of the hill. We pushed through <br> these towards the railway without meeting.
+          </div>
+
+          <div class="container">
+            <img src="https://myhometheme-2-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/02/Orpha-Letitia-150x150.jpg"
+          
+                 alt="">
+          </div>
+
+          <h3> ORPHA LETITIA</h3>
+          <div class="small"> System Engineer, Beta Manyfacturing </div>
+        </div>
+        <div class="carousel-item">
+          <span> We went down the lane, by the body of the man in black, sodden now from the <br>
+                        overnight hail, and broke into the woods at the foot of the hill. We pushed through <br>
+                        these towards the railway without meeting.
+                   </span>
+
+          <div class="container">
+            <img src="https://myhometheme-2-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/02/Willard-Donovan-150x150.jpg"
+          
+                 alt="">
+          </div>
+
+          <h3> WILLARD DONOVAN</h3>
+          <span class="small"> CEO, Alpha </span>
+        </div>
+        <div class="carousel-item">
+          <div> We went down the lane, by the body of the man in black, sodden now from the <br> overnight hail, and broke into
+            the woods at the foot of the hill. We pushed through <br> these towards the railway without meeting.
+          </div>
+
+          <div class="container">
+            <img src="https://myhometheme-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/02/Eugenia-Lavina-150x150.jpg"
+          
+                 alt="">
+          </div>
+
+          <h3> EUGENIA LAVINA</h3>
+          <div class="small"> Art Director, Digital ART </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!--clients section-->
   <section class="clients-section">
@@ -63,15 +299,18 @@
   <footer class="row">
     <div class="col-sm-12">2017 MyHome by TangibleDesign. All rights reserved.</div>
   </footer>
-  <!--footer
+  <!--footer-->
 
+  <script src="assets/scripts/app.js"></script>
 
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+          integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+          integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+          integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+          crossorigin="anonymous"></script>
 
 </html>

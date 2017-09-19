@@ -1,0 +1,52 @@
+.cites {
+    background-color: #f2f2f2;
+}
+
+.cites .container {
+    padding: 2rem 0;
+}
+
+.cites .swiper-container {
+    padding: 2rem 0 4rem;
+}
+
+.cites .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+}
+
+.cites a.swiper-slide {
+    text-decoration: none;
+}
+
+.cites a.swiper-slide:hover img {
+    transform: scale(1);
+}
+
+.cites .swiper-slide div {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.cites .swiper-slide img {
+    transition: all .6s cubic-bezier(.4, 0, .2, 1);
+    transform: scale(1.2);
+}
+
+.cites .swiper-slide h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+
+    align-items: center;
+    justify-content: center;
+}

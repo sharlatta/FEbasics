@@ -1,0 +1,37 @@
+.testimonials{
+     text-align: center;
+     background-color: #F2F2F2;
+     padding: 30px;
+}
+.testimonials h1{
+    padding-bottom: 20px;
+    font-family: Play;
+    font-weight: bold;
+   
+}
+.testimonials h3{
+    font-family: Play;
+    font-weight: bold;
+}
+.testimonials img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+}
+.small{
+    padding-bottom: 20px;
+}
+
+.carousel-item {
+    flex-direction: column;
+}
+.carousel-indicators li{
+    background-color: #29AAE3;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    flex: 0 1 10px;
+}
+.carousel-indicators{
+    bottom: -20px;
+}
