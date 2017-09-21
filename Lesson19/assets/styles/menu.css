@@ -1,0 +1,149 @@
+.clear {
+    clear: both;
+}
+
+.menu {
+    display: flex;
+    margin: 0 auto;
+    width: 1170px;
+    justify-content: flex-start;
+    padding-top: 20px;
+    height: 90px;
+    align-items: center;
+}
+
+.menu .topmenu {
+    padding-top: 22px;
+    position: relative;
+}
+
+.menu .topmenu li {
+    float: left;
+    list-style: none;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+.menu .topmenu .fa-caret-down {
+    font-size: 10px;
+}
+
+.menu .topmenu .fa-plus-circle {
+    color: #29aae3;
+}
+
+.menu .topmenu li:hover .first {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu .topmenu li:hover .second {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu .topmenu li:hover .third {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu .topmenu li:hover .fourth {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu .topmenu li:hover .fifth {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu .topmenu li:hover .sixth {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu .topmenu a {
+    color: #4d4d4d;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu .topmenu a:hover {
+    color: #29aae3;
+}
+
+.menu .topmenu span a {
+    color: #29aae3;
+    padding-left: 100px;
+}
+
+.menu .hidden-menu {
+    position: absolute;
+    transition: 0.3s;
+    z-index: 3;
+    top: 110px;
+}
+
+.menu .topmenu li:hover .hidden-menu {
+    top: 70px;
+}
+
+.first {
+    left: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.second {
+    left: 143px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.third {
+    left: 222px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fourth {
+    left: 330px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fifth {
+    left: 398px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.sixth {
+    left: 493px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu .hidden-menu li {
+    background-color: rgba(102, 102, 102, 1);
+    float: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    width: 220px;
+}
+
+.menu .hidden-menu li:hover {
+    cursor: pointer;
+}
+
+.menu .hidden-menu a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.menu .hidden-menu a:hover {
+    color: #fff;
+}
