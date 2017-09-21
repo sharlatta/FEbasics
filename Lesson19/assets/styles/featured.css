@@ -1,0 +1,131 @@
+.featured {
+    background-color: #f2f2f2;
+}
+
+.featured .container {
+    padding: 2rem 0;
+}
+
+.featured .swiper-container {
+    padding: 2rem 0 4rem;
+}
+
+.featured .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+}
+
+.featured .swiper-slide {
+    text-decoration: none;
+}
+
+.featured .swiper-slide:hover .header p {
+    opacity: 1;
+}
+
+.featured .swiper-slide .header {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    height: 232px;
+}
+
+.featured .swiper-slide .header p {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+
+    transition: all .2s ease-in-out;
+    text-align: center;
+
+    opacity: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.featured .swiper-slide .body {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    height: 232px;
+    padding: 12px;
+
+    background-color: #fff;
+}
+
+.featured .swiper-slide .body .title {
+    text-decoration: none;
+
+    color: #222;
+}
+
+.featured .swiper-slide .body address {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.featured .swiper-slide .body .primary {
+    font-weight: 700;
+
+    color: #29aae3;
+}
+
+.featured .swiper-slide .body .info {
+    font-size: 14px;
+
+    display: flex;
+
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.featured .swiper-slide .body .additionally {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured .swiper-slide .body .additionally .detalis {
+    padding: 4px 16px;
+
+    transition: all .2s cubic-bezier(.4, 0, .2, 1);
+    text-decoration: none;
+
+    color: #29aae3;
+    border: 2px solid #29aae3;
+}
+
+.featured .swiper-slide .body .additionally .date {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.featured .swiper-slide .body .additionally .detalis:hover {
+    color: #fff;
+    background-color: #29aae3;
+}
+
+.featured .swiper-slide .body .additionally .compare {
+    padding: 6px 18px;
+
+    text-decoration: none;
+
+    color: #222;
+}
+
+.featured .swiper-slide .body .additionally .compare:hover {
+    background-color: rgba(158, 158, 158, .2);
+}
