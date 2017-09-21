@@ -1,6 +1,5 @@
 .blog {
     margin: 0 auto;
-    width: 1170px;
 }
 
 .blog h1 {
@@ -9,12 +8,6 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
-}
-
-.blog .room {
-    width: 32%;
-    float: left;
-    margin: 0 0.5%;
 }
 
 .blog .room img {
@@ -40,13 +33,7 @@
     padding-bottom: 12px;
 }
 
-.blog .button {
-    position: absolute;
-    right: 2%;
-    width: 35%;
-}
-
-.blog .button a {
+.blog .button{
     border: 2px solid #29aae3;
     color: #29aae3;
     padding: 4.5% 11%;
@@ -55,7 +42,7 @@
     transition: 0.1s;
 }
 
-.blog .button a:hover {
+.blog .button:hover {
     background-color: #29aae3;
     color: #fff;
 }

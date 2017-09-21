@@ -2,14 +2,21 @@
     clear: both;
 }
 
-.menu {
-    display: flex;
-    margin: 0 auto;
-    width: 1170px;
-    justify-content: flex-start;
-    padding-top: 20px;
-    height: 90px;
-    align-items: center;
+@media screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        display: flex;
+        margin: 0 auto;
+        justify-content: flex-start;
+        padding-top: 20px;
+        height: 90px;
+        align-items: center;
+    }
 }
 
 .menu .topmenu {
@@ -76,7 +83,7 @@
 
 .menu .topmenu span a {
     color: #29aae3;
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 .menu .hidden-menu {
