@@ -1,0 +1,158 @@
+.agents h2 {
+	margin-top: 50px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-family: PlayBold;
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.agents h2:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 90px;
+	width: 3.5%;
+	margin: 0 auto;
+	height: 2px;
+	background-color: #29aae3;
+}
+
+.agents .row {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.picture1 {
+	height: 370px;
+	width: 370px;
+	background-image: url(https://myhometheme-2-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/01/Daniella-Suzanne-600x600.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.picture2 {
+	height: 370px;
+	width: 370px;
+	background-image: url(https://myhometheme-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/01/Erle-Orval-400x400.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.picture3 {
+	height: 370px;
+	width: 370px;
+	background-image: url(https://myhometheme-m05hb5fdat0ei1zc08.netdna-ssl.com/v1/wp-content/uploads/2017/01/Peter-Hendricks-600x600.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.picture1:hover {
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+.picture2:hover {
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+.picture3:hover {
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+.agents .caption {
+	position: absolute;
+	background-color: #F5F5F5;
+	top: 370px;
+	left: 15px;
+	margin-bottom: 100px;
+	height: 270px;
+	width: 370px;
+}
+
+.agents .caption h3 {
+	margin-bottom: 20px;
+}
+
+.fa-phone {
+	color: rgb(169,169,169);
+	padding-right: 10px;
+}
+
+.fa-envelope-o {
+	color: rgb(169,169,169);
+	padding-right: 10px;
+}
+
+.email{
+	color: rgb(169,169,169);
+	font-size: 14px;
+}
+
+.phone{
+	color: rgb(169,169,169);
+	font-size: 14px;
+}
+
+.network i {
+	opacity: 0.5;
+	padding-left: 10px;
+}
+
+.network i:hover {
+	opacity: 1;
+}
+
+.network span {
+	float: right;
+	margin-right: 10px;
+	color: #29aae3;
+	border: 2px solid #29aae3;
+	padding: 3px 15px;
+	font-size: 14px;
+}
+
+.network span:hover {
+	background-color: #29aae3;
+	color: white;
+} 
+
+.clearfix {
+	clear: right;
+}
+
+@font-face {
+	font-family: "PlayRegular";
+	src: url("../fonts/PlayRegular/PlayRegular.eot");
+	src: url("../fonts/PlayRegular/PlayRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/PlayRegular/PlayRegular.woff") format("woff"),
+	url("../fonts/PlayRegular/PlayRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+	}
+
+@font-face {
+	font-family: "PlayBold";
+	src: url("../fonts/PlayBold/PlayBold.eot");
+	src: url("../fonts/PlayBold/PlayBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/PlayBold/PlayBold.woff") format("woff"),
+	url("../fonts/PlayBold/PlayBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+	}
